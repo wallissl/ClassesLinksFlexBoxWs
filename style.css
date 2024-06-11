@@ -1,12 +1,19 @@
+*{
+    margin:0;
+}
+
 body{
     background: rgb(239, 239, 239);
 }
 
 header{
     background-color: aquamarine;
-    height: 100px;
+    height: 80px;
     width:100%;
     display: flex;
+    position: fixed;
+    padding:10px;
+    
 }
 
 .headerTop{
@@ -49,9 +56,18 @@ a:hover{
     
 }
 
+a:active{
+    font-size:50px;
+    
+    transition-duration: 1s;
+
+
+}
+
 section{
-    background-color:aqua;
-    height: 500px;
+    background-color:rgb(255, 255, 255);
+    height: 700px;
+    
 }
 
 footer{
@@ -70,9 +86,71 @@ footer{
 
 /* Css página Imagens */
 
+.sectionPagImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 1100px;   
+    
+}
 
+.b1{
+    background-image: url("https://s2-ge.glbimg.com/S_1zho0m7c3MsaZ-tChQDoZVfcI=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/3/1yt9BZRDWGNyBsLpMqpA/bruno.jpg");
+    width:280px;
+    height: 250px;
+    background-size:431px;
+    background-position: 7px 0;
+}
+.b2{
+    background-color: green;
+    width:280px;
+    height: 250px;
+}
+.b3{
+    background-color: purple;
+    width:280px;
+    height: 250px;
+}
+.b4{
+    background-color: yellow;
+    width:280px;
+    height: 250px;
+}
 
 
 /* Css página Vídeos */
 
+
+/* CSS contatos */
+
+.textForm {
+    background-color: rgb(193, 191, 191);
+    width: 500px;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: gray;
+}
+
+.textForm::placeholder{
+    color:rgb(0, 0, 0)
+}
+
+.butao{
+    padding: 5px;
+    background-color: aqua;
+    border: solid 0;
+    border-radius: 5px;
+    width: 100px;
+    font-family: "Comfortaa", sans-serif;
+   
+}
+
+
+
+
+.comfortaa-uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+}
 
