@@ -1,6 +1,6 @@
-*{
+/* *{
     margin:0;
-}
+} */
 
 body{
     background: rgb(239, 239, 239);
@@ -11,25 +11,24 @@ header{
     height: 80px;
     width:100%;
     display: flex;
-    position: fixed;
-    padding:10px;
-    
+    justify-content: space-around;
+    align-items: center;
 }
 
 .headerTop{
     color:purple;
-    width:40%;
+
 }
 
 .lista{
-   width:40%;
     
+    position: relative;
+    left:5%;
 }
 
 .lista ul{
     list-style-type: none;
     display: flex;
-    
 }
 
 .lista li{
@@ -39,29 +38,24 @@ header{
    
     color:white;
     text-align: center;
-   
 }
 
 a {
     color:white;
     text-decoration: none;
     padding: 10px;
-    
 }
 
 a:hover{
     background-color: white;
     color:aquamarine;
     padding: 10px;
-    
 }
 
 a:active{
     font-size:50px;
     
     transition-duration: 1s;
-
-
 }
 
 section{
@@ -71,17 +65,46 @@ section{
 }
 
 footer{
-    background-color: orange;
+    background-color: rgb(179, 179, 179);
     height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.homeFooter1{
+
 }
 
 
 /* Css página Home */
 
-.textoHome{
-    color:white;
+.sectionHome{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px rgb(230, 27, 237);
+    height: 450px;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.homeImg1{
+    border: solid 1px blue;
+    height: 250px;
+    width:400px;
+}
+
+.homeText1{
+    border: solid 1px green;
+    height: 250px;
+    width:400px;
+}
+
+.homeP1{
+    color:gray;
+}
 
 
 /* Css página Imagens */
@@ -91,16 +114,15 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 1100px;   
+    height:500px;
+    flex-wrap: wrap;
     
 }
 
 .b1{
-    background-image: url("https://s2-ge.glbimg.com/S_1zho0m7c3MsaZ-tChQDoZVfcI=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/U/3/1yt9BZRDWGNyBsLpMqpA/bruno.jpg");
+    background-color: rgb(255, 162, 48);
     width:280px;
     height: 250px;
-    background-size:431px;
-    background-position: 7px 0;
 }
 .b2{
     background-color: green;
@@ -143,14 +165,69 @@ footer{
     border-radius: 5px;
     width: 100px;
     font-family: "Comfortaa", sans-serif;
-   
 }
-
-
-
 
 .comfortaa-uniquifier> {
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
 }
 
+.formulario{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sectionContatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Acme", sans-serif;
+}
+
+
+/* Testando @medias Query*/
+
+/* Media query pag imagens */
+@media only screen and (min-width:000px) and (max-width:880px){
+    .sectionPagImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height:850px;
+        flex-wrap:nowrap;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:800px){
+    body{
+        background-color: rgb(141, 255, 106);
+    }
+}
+
+@media only screen and (min-width:1200px){
+    body{
+        background-color: rgb(138, 54, 255);
+    }
+}
